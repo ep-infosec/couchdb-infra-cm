@@ -1,0 +1,179 @@
+all:
+  children:
+    bastions:
+      hosts:
+        couchdb-bastion-x86-64-debian-dal-1-01:
+          instance:
+            created_at: '2020-12-04T17:51:31Z'
+            id: 0717_27810451-1a4b-4f12-8fcb-47375063cf28
+            name: couchdb-bastion-x86-64-debian-dal-1-01
+            profile: cx2-2x4
+            subnet: couchdb-ci-farm-dal-1
+            vpc: couchdb-ci-farm-vpc
+            zone: us-south-1
+          ip_addrs:
+            private: 10.240.0.17
+            public: 169.48.153.153
+          system:
+            arch: amd64
+            num_cpus: 2
+            ram: 4
+    ci_agents:
+      hosts:
+        couchdb-worker-x86-64-debian-dal-1-01:
+          instance:
+            created_at: '2020-12-04T17:37:42Z'
+            id: 0717_0380c8b9-988a-4938-aa9d-95ebf50ff9a7
+            name: couchdb-worker-x86-64-debian-dal-1-01
+            profile: cx2-4x8
+            subnet: couchdb-ci-farm-dal-1
+            vpc: couchdb-ci-farm-vpc
+            zone: us-south-1
+          ip_addrs:
+            bastion_host: couchdb-bastion-x86-64-debian-dal-1-01
+            bastion_ip: 169.48.153.153
+            private: 10.240.0.16
+            public: null
+          system:
+            arch: amd64
+            num_cpus: 4
+            ram: 8
+        couchdb-worker-x86-64-debian-dal-1-02:
+          instance:
+            created_at: '2020-12-04T17:37:20Z'
+            id: 0717_20746912-9251-417a-8b2e-75de411c37a4
+            name: couchdb-worker-x86-64-debian-dal-1-02
+            profile: cx2-4x8
+            subnet: couchdb-ci-farm-dal-1
+            vpc: couchdb-ci-farm-vpc
+            zone: us-south-1
+          ip_addrs:
+            bastion_host: couchdb-bastion-x86-64-debian-dal-1-01
+            bastion_ip: 169.48.153.153
+            private: 10.240.0.15
+            public: null
+          system:
+            arch: amd64
+            num_cpus: 4
+            ram: 8
+        couchdb-worker-x86-64-debian-dal-1-03:
+          instance:
+            created_at: '2020-12-04T17:36:58Z'
+            id: 0717_c158fd8e-69d9-486d-86a9-094421b5c923
+            name: couchdb-worker-x86-64-debian-dal-1-03
+            profile: cx2-4x8
+            subnet: couchdb-ci-farm-dal-1
+            vpc: couchdb-ci-farm-vpc
+            zone: us-south-1
+          ip_addrs:
+            bastion_host: couchdb-bastion-x86-64-debian-dal-1-01
+            bastion_ip: 169.48.153.153
+            private: 10.240.0.14
+            public: null
+          system:
+            arch: amd64
+            num_cpus: 4
+            ram: 8
+        couchdb-worker-x86-64-debian-dal-1-04:
+          instance:
+            created_at: '2020-12-04T17:36:37Z'
+            id: 0717_80757f27-9b25-4c33-a2ea-4259e3881d9a
+            name: couchdb-worker-x86-64-debian-dal-1-04
+            profile: cx2-4x8
+            subnet: couchdb-ci-farm-dal-1
+            vpc: couchdb-ci-farm-vpc
+            zone: us-south-1
+          ip_addrs:
+            bastion_host: couchdb-bastion-x86-64-debian-dal-1-01
+            bastion_ip: 169.48.153.153
+            private: 10.240.0.13
+            public: null
+          system:
+            arch: amd64
+            num_cpus: 4
+            ram: 8
+        couchdb-worker-x86-64-debian-dal-1-05:
+          instance:
+            created_at: '2020-12-04T17:24:05Z'
+            id: 0717_c47df357-9178-40c7-a642-01d0ce7a11fa
+            name: couchdb-worker-x86-64-debian-dal-1-05
+            profile: cx2-4x8
+            subnet: couchdb-ci-farm-dal-1
+            vpc: couchdb-ci-farm-vpc
+            zone: us-south-1
+          ip_addrs:
+            bastion_host: couchdb-bastion-x86-64-debian-dal-1-01
+            bastion_ip: 169.48.153.153
+            private: 10.240.0.12
+            public: null
+          system:
+            arch: amd64
+            num_cpus: 4
+            ram: 8
+        couchdb-worker-x86-64-debian-dal-1-06:
+          instance:
+            created_at: '2020-12-04T17:23:32Z'
+            id: 0717_6976f5a8-05d1-472a-8f12-f667e8de6403
+            name: couchdb-worker-x86-64-debian-dal-1-06
+            profile: cx2-4x8
+            subnet: couchdb-ci-farm-dal-1
+            vpc: couchdb-ci-farm-vpc
+            zone: us-south-1
+          ip_addrs:
+            bastion_host: couchdb-bastion-x86-64-debian-dal-1-01
+            bastion_ip: 169.48.153.153
+            private: 10.240.0.10
+            public: null
+          system:
+            arch: amd64
+            num_cpus: 4
+            ram: 8
+        couchdb-worker-x86-64-debian-dal-1-07:
+          instance:
+            created_at: '2020-12-04T17:22:57Z'
+            id: 0717_294301e9-30f8-4516-95bd-7c1583cba5f4
+            name: couchdb-worker-x86-64-debian-dal-1-07
+            profile: cx2-4x8
+            subnet: couchdb-ci-farm-dal-1
+            vpc: couchdb-ci-farm-vpc
+            zone: us-south-1
+          ip_addrs:
+            bastion_host: couchdb-bastion-x86-64-debian-dal-1-01
+            bastion_ip: 169.48.153.153
+            private: 10.240.0.8
+            public: null
+          system:
+            arch: amd64
+            num_cpus: 4
+            ram: 8
+        couchdb-worker-x86-64-debian-dal-1-08:
+          instance:
+            created_at: '2021-03-08T21:13:51Z'
+            id: 0717_d015b177-e247-4c10-9fdd-a06009127409
+            name: couchdb-worker-x86-64-debian-dal-1-08
+            profile: cx2-4x8
+            subnet: couchdb-ci-farm-dal-1
+            vpc: couchdb-ci-farm-vpc
+            zone: us-south-1
+          ip_addrs:
+            bastion_host: couchdb-bastion-x86-64-debian-dal-1-01
+            bastion_ip: 169.48.153.153
+            private: 10.240.0.4
+            public: null
+          system:
+            arch: amd64
+            num_cpus: 4
+            ram: 8
+        ubuntu:
+          instance:
+            id: ubuntu
+            name: ubuntu
+            subnet: null
+          ip_addrs:
+            bastion_host: null
+            bastion_ip: null
+            public: 140.211.10.101
+          system:
+            arch: ppc64le
+            num_cpus: 8
+            ram: 16
